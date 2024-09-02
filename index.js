@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
 });
 
 // API endpoint to create a shortened URL
-app.get('/api/shorturl', function(req, res) {
+app.post('/api/shorturl', function(req, res) {
   const originalUrl = req.body.url;
 
   // Validate the URL
